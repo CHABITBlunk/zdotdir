@@ -1,5 +1,3 @@
-path+=("$HOME/.cargo/bin")
-path+=("$HOME/go/bin")
 source "$ZDOTDIR/.antidote/antidote.zsh"
 source "$ZDOTDIR/kanagawa-zsh-syntax-highlighting.zsh"
 
@@ -16,13 +14,6 @@ fi
 
 source ${zsh_plugins}.zsh
 
-source $ZSH/themes/gentoo.zsh-theme
+source "$ZDOTDIR/themes/gentoo.zsh-theme"
 
 set -o vi
-
-alias vim="nvim"
-alias ls="exa"
-
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-	exec Hyprland
-fi
