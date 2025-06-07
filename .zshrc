@@ -16,7 +16,7 @@ source ${zsh_plugins}.zsh
 
 source "$ZDOTDIR/themes/gentoo.zsh-theme"
 
-set -o vi
+# set -o vi
 
 alias ls="exa"
 alias vim="nvim"
