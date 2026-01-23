@@ -1,5 +1,5 @@
 source "$ZDOTDIR/.antidote/antidote.zsh"
-source "$ZDOTDIR/kanagawa-zsh-syntax-highlighting.zsh"
+source "$ZDOTDIR/moonfly-zsh-syntax-highlighting.zsh"
 
 zsh_plugins="${ZDOTDIR:-~}/.zsh_plugins"
 
@@ -14,9 +14,10 @@ fi
 
 source ${zsh_plugins}.zsh
 
-source "$ZDOTDIR/themes/gentoo.zsh-theme"
-
-# set -o vi
+SPACESHIP_USER_SHOW=always
+SPACESHIP_DIR_TRUNC_REPO=false
+SPACESHIP_PROMPT_ADD_NEWLINE=true
+SPACESHIP_PROMPT_ORDER=(user host dir package git docker docker_compose python venv rust java golang lua)
 
 alias ls="exa"
 alias vim="nvim"
